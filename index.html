@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Chintu Garg Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Chintu Garg Portfolio</title>
+<link rel="stylesheet" href="style.css">
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!-- AOS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
 </head>
 
 <body>
 
+<!-- PARTICLES -->
+<canvas id="particles"></canvas>
+
+
 <!-- NAVBAR -->
 <nav>
-    <h2 class="logo">Chintu</h2>
+    <div class="logo">Portfolio</div>
     <div class="nav-links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -21,49 +26,65 @@
     </div>
 </nav>
 
-<!-- HERO SECTION -->
-<section class="hero">
+<!-- HERO -->
+<header class="hero">
     <div class="hero-text">
         <h1>Hi, I'm <span>Chintu Garg</span></h1>
-        <h2 id="typing"></h2>
+        <h2><span id="typing"></span></h2>
         <p>I build modern websites and explore AI technologies.</p>
 
         <div class="buttons">
             <a href="#" class="btn">Download Resume</a>
-            <a href="#" class="btn-outline">GitHub</a>
+            <a href="https://github.com/" target="_blank" class="btn-outline">GitHub</a>
         </div>
     </div>
 
     <div class="hero-img">
         <img src="profile.jpg">
     </div>
-</section>
+</header>
 
 <!-- ABOUT -->
-<section id="about">
+<section id="about" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>I am a 2nd semester CSE student at Chandigarh University passionate about Web Development & AI.</p>
+    <p>I am CSE student passionate about Web Development & AI.</p>
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
+<section id="skills" data-aos="fade-up">
     <h2>Skills</h2>
-    <div class="cards">
-        <div class="card">HTML</div>
-        <div class="card">CSS</div>
-        <div class="card">JavaScript</div>
-        <div class="card">Azure AI</div>
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="bar"><div style="width:90%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="bar"><div style="width:80%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>JavaScript</p>
+        <div class="bar"><div style="width:70%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Azure AI</p>
+        <div class="bar"><div style="width:75%"></div></div>
     </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
+<section id="projects" data-aos="fade-up">
     <h2>Projects</h2>
+
     <div class="cards">
         <div class="project">
+            <img src="project1.jpg">
             <h3>Portfolio Website</h3>
-            <p>Modern personal website</p>
         </div>
+
         <div class="project">
             <h3>Video Editing</h3>
             <p>University concert edits</p>
@@ -72,15 +93,22 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" data-aos="fade-up">
     <h2>Contact</h2>
-    <p><i class="fas fa-envelope"></i> chintugarg2323@gmail.com</p>
+    <p>📧 chintugarg2323@gmail.com</p>
 </section>
 
 <footer>
     <p>© 2026 Chintu Garg</p>
 </footer>
 
+<!-- SCRIPTS -->
 <script src="script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
 </body>
 </html>
