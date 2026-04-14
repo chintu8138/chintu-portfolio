@@ -182,59 +182,95 @@ footer {
     text-align: center;
     padding: 20px;
 }
-/* MOBILE RESPONSIVE */
+/* ===== ANDROID APP STYLE ===== */
 @media (max-width: 768px) {
 
-    nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
+    body {
+        background: #0f172a;
+        padding-bottom: 70px; /* space for bottom nav */
     }
 
-    .nav-links {
-        margin-top: 10px;
-    }
-
+    /* HERO MOBILE */
     .hero {
         flex-direction: column;
         text-align: center;
-        height: auto;
-        padding: 30px 20px;
+        padding: 30px 15px;
     }
 
     .hero-text h1 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .hero-text h2 {
-        font-size: 18px;
+        font-size: 15px;
+    }
+
+    .hero-text p {
+        font-size: 13px;
     }
 
     .hero-img img {
-        width: 180px;
-        margin-top: 20px;
+        width: 160px;
+        border-radius: 15px;
+        box-shadow: 0 0 25px #00f7ff;
     }
 
-    .buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
+    /* BUTTONS */
     .btn, .btn-outline {
-        width: 100%;
-        text-align: center;
+        width: 85%;
+        padding: 10px;
+        font-size: 14px;
     }
 
-    .skill-box {
-        flex-direction: column;
-        gap: 10px;
+    /* SKILLS */
+    .skill-bar {
+        width: 90%;
+        margin: auto;
     }
 
+    /* PROJECTS */
     .projects {
         flex-direction: column;
+        gap: 15px;
     }
 
-    section {
-        padding: 30px 15px;
+    .card {
+        width: 90%;
     }
+
+    /* REMOVE TOP NAV */
+    nav {
+        display: none;
+    }
+
+    /* ===== BOTTOM NAV (ANDROID STYLE) ===== */
+    .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(15, 23, 42, 0.9);
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        z-index: 1000;
+    }
+
+    .bottom-nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.3s;
+    }
+
+    .bottom-nav a:hover {
+        color: #00f7ff;
+        transform: scale(1.1);
+    }
+
+}
