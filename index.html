@@ -3,66 +3,78 @@
 <head>
     <title>Chintu Garg Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
 
-<header>
-    <img src="profile.jpg" class="profile">
-    <h1>Chintu Garg</h1>
-    <p>CSE Student | Web Developer | AI Learner</p>
-</header>
-
+<!-- NAVBAR -->
 <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certificates">Certificates</a>
-    <a href="#contact">Contact</a>
+    <h2 class="logo">Chintu</h2>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
 </nav>
 
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Hi, I'm <span>Chintu Garg</span></h1>
+        <h2 id="typing"></h2>
+        <p>I build modern websites and explore AI technologies.</p>
+
+        <div class="buttons">
+            <a href="#" class="btn">Download Resume</a>
+            <a href="#" class="btn-outline">GitHub</a>
+        </div>
+    </div>
+
+    <div class="hero-img">
+        <img src="profile.jpg">
+    </div>
+</section>
+
+<!-- ABOUT -->
 <section id="about">
     <h2>About Me</h2>
-    <p>I am a 2nd semester CSE student at Chandigarh University. I am passionate about Web Development and Artificial Intelligence.</p>
+    <p>I am a 2nd semester CSE student at Chandigarh University passionate about Web Development & AI.</p>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
     <h2>Skills</h2>
-    <div class="card">HTML</div>
-    <div class="card">CSS</div>
-    <div class="card">JavaScript</div>
-    <div class="card">Azure AI (AI-900)</div>
+    <div class="cards">
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">Azure AI</div>
+    </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
     <h2>Projects</h2>
-
-    <div class="project">
-        <h3>Portfolio Website</h3>
-        <p>Personal website using HTML, CSS, JS</p>
+    <div class="cards">
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>Modern personal website</p>
+        </div>
+        <div class="project">
+            <h3>Video Editing</h3>
+            <p>University concert edits</p>
+        </div>
     </div>
-
-    <div class="project">
-        <h3>Video Editing Project</h3>
-        <p>Edited university concert videos into short clips</p>
-    </div>
-
 </section>
 
-<section id="certificates">
-    <h2>Certificates</h2>
-
-    <div class="project">
-    <img src="webcert.jpg" width="200">
-    <p>Web Development (Coursera)</p>
-</div>
-
-</section>
-
+<!-- CONTACT -->
 <section id="contact">
     <h2>Contact</h2>
-    <p><i class="fas fa-envelope"></i> chintu8138@gmail.com</p>
-    <p><i class="fab fa-linkedin"></i> LinkedIn Profile</p>
+    <p><i class="fas fa-envelope"></i> chintugarg2323@gmail.com</p>
 </section>
 
 <footer>
